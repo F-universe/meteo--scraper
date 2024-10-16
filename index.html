@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo Scraper</title>
+</head>
+<body>
+    <h1>Cerca il meteo</h1>
+    <form method="post">
+        <label for="location">Inserisci il luogo:</label>
+        <input type="text" id="location" name="location" required>
+        <button type="submit">Cerca</button>
+    </form>
+
+    {% if result %}
+    <h2>Risultato:</h2>
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
